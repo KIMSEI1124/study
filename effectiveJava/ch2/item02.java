@@ -1,4 +1,4 @@
-public class item2 {
+public class item02 {
     public static void main(String[] args) {
         buliderPattern study = new buliderPattern.Builder(1).two(2).three(3).four(4).build();
         System.out.println(study);

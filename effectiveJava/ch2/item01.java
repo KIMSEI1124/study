@@ -1,6 +1,6 @@
 import java.util.EnumSet;
 
-public class item1 {
+public class item01 {
     String name;
     int num;
     public item1() {
