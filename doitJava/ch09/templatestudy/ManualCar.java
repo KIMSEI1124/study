@@ -1,5 +1,3 @@
-package templatestudy;
-
 public class ManualCar extends Car {
     @Override
     public void drive() {
