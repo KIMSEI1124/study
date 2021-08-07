@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "ch13/innerClass",
+        "ch12",
         "ch11",
         "ch08",
         "ch07",
@@ -9,6 +11,6 @@
         "ch03",
         "ch02",
         "ch01",
-        "ch12"
+        "ch13"
     ]
 }
