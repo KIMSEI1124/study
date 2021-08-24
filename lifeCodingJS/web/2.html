@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>WEB2 - CSS</title>
-        <meta charset="utf-8">
-    </head>
-    
-    <body>
-        <h1><a href="index.html">WEB</a></h1>
+
+<head>
+    <title>WEB2 - CSS</title>
+    <meta charset="utf-8">
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+            /* 링크의 밑줄 삭제처리 */
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        #article {
+            padding-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id ="grid">
         <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
+            <li><a href="1.html" class="saw">HTML</a></li>
+            <li><a href="2.html" style="text-decoration: underline;">CSS</a></li>
+            <!--링크의 밑줄을 삭제했지만 표현하고 싶을 경우-->
+            <li><a href="3.html" class="saw" id="active">JavaScript</a></li>
         </ol>
-        <h2>CSS이란 무엇인가?</h2>
-        <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong> creating <u>web</u> pages</strong> and web
-        applications.</p>
-        <br>나는 br을 사용했지롱
-        <br><br><br> br을 3개 사용했지롱
-        <p>나는 p를 사용했지롱</p>
-        <p style="margin-top:40px;">나는 css도 사용했지롱</p>
-        
-        <span style="font-size: 24px;">coding</span>
-        <h3>coding</h3> <!-- 이게 더 좋다-->
-        <table>
-            <tr>
-                <td>head</td>
-                <td>98.1%</td>
-            </tr>
-            <tr>
-                <td>body</td>
-                <td>97.9%</td>
-            </tr>
-            <tr>
-                <td>html</td>
-                <td>97.9</td>
-            </tr>
-        </table>
-        <img src="coding.jpg" width="100%">
-    </body>
+        <!--
+        <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+        <ol>
+            <li><a href="1.html"><font color="red">HTML</font></a></li>
+            <li><a href="2.html"><font color="red">CSS</font></a></li>
+            <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+        </ol>
+    이런식으로 반복하는것보다 위와 같이 하는게 더 효율이 좋다.
+    -->
+        <div id="article">
+            <h2>CSS이란 무엇인가?</h2>
+            <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 specification">Hypertext Markup
+                    Language
+                    (HTML)</a> is the standard markup language for <strong> creating <u>web</u> pages</strong> and web
+                applications.</p>
+        </div>
+    </div>
+</body>
+
 </html>
